@@ -149,7 +149,7 @@ def login():
             password_error = 'Password is invalid'
             return render_template('login.html', password_error=password_error)
 
-        if not username:
+        if not typed_user:
             username_error = 'Username is not registered'
             return render_template('login.html', username_error=username_error)
 
